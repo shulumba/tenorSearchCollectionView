@@ -118,7 +118,7 @@ final class TenorGifProvider: GifsProvider {
     }
     
     func registerShare(gifItem: GifsItem) {
-        let share = TenorEndpointRegisterShare.init(key: self.apiKey!, id: gifItem.gifID)
+        _ = TenorEndpointRegisterShare.init(key: self.apiKey!, id: gifItem.gifID)
     }
     
     func numberOfItems() -> Int {
